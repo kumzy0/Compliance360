@@ -1,0 +1,27 @@
+﻿@page
+@model Compliance360.Pages.SigninModel
+@{
+    ViewData["Title"] = "Signin";
+    Layout = "_SigninLayout";
+}
+
+          <div class="lgbox">
+            <div class="text-center pl-4 pb-4">
+              <h4 class="fw-bold">Compliance360</h4>
+            </div>
+            <p class="signintext">Sign in to Compliance360</p>
+            <p class="signinsubtext">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor
+            </p>
+
+            <form>
+              <div class="mb-3">
+                <label for="emailtext" class="form-label">
+                  Email address
+                </label>
+                <input type="email" class="form-control" id="emailtext" />
+              </div>
+              <a class="btn btn-block btn-login">Generate sign in OTP</a>
+            </form>
+          </div>
