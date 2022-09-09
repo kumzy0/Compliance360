@@ -1,0 +1,32 @@
+﻿@page
+@model Compliance360.Pages.OTPModel
+@{
+    ViewData["Title"] = "OTP";
+    Layout = "_SigninLayout";
+}
+
+  <div class="lgvbox">
+            <div class="text-center pl-4 pb-4">
+              <h4 class="fw-bold">Compliance360</h4>
+            </div>
+            <p>
+              Sent a verification code to to verify your mobile number +234 813
+              7455 443
+            </p>
+
+            <form>
+              <div class="d-flex justify-content-between mb-4 mt-4">
+                <input type="text" class="form-control otpform" />
+                <input type="text" class="form-control otpform" />
+                <input type="text" class="form-control otpform" />
+                <input type="text" class="form-control otpform" />
+              </div>
+              <div class="text-center">
+                <p>Didn’t get the code?</p>
+                <a href="#" class="otplink mb-4">Resend OTP</a>
+                <div class="mb-4"></div>
+              </div>
+
+              <a class="btn btn-block btn-login">Verify number</a>
+            </form>
+          </div>
