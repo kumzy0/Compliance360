@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Compliance360.Data;
 
 namespace Compliance360.Areas.Identity.Pages.Account
 {
@@ -20,17 +21,21 @@ namespace Compliance360.Areas.Identity.Pages.Account
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
+    private readonly ApplicationDbContext _context;
 
-        public LoginModel(SignInManager<IdentityUser> signInManager, 
+
+    public LoginModel(SignInManager<IdentityUser> signInManager, 
             ILogger<LoginModel> logger,
-            UserManager<IdentityUser> userManager)
+            UserManager<IdentityUser> userManager, ApplicationDbContext context)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
-        }
+      _context = context;
 
-        [BindProperty]
+    }
+
+    [BindProperty]
         public InputModel Input { get; set; }
 
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
@@ -79,7 +84,15 @@ namespace Compliance360.Areas.Identity.Pages.Account
             {
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
-                var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
+                var userAuth = _context.UserAuths.Where(x => x.Email.ToLower() == Input.Email.ToLower() && x.OTP == Input.Password).FirstOrDefault();
+
+            if (userAuth == null)
+        {
+          ModelState.AddModelError(string.Empty, "Invalid OTP.");
+          return Page();
+
+        }
+        var result = await _signInManager.PasswordSignInAsync(Input.Email, userAuth.Password, Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
@@ -104,5 +117,6 @@ namespace Compliance360.Areas.Identity.Pages.Account
             // If we got this far, something failed, redisplay form
             return Page();
         }
+
     }
 }
