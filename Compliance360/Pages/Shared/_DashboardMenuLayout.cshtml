@@ -19,39 +19,33 @@
               </li>
             </ul>
           </li>
-          <li class=" navigation-header"><span>Apps</span>
+          <li class=" navigation-header"><span>Applications</span>
           </li>
-          <li class=" nav-item"><a href="#"><i class="feather icon-mail"></i><span class="menu-title" data-i18n="Email">Email</span></a>
-          </li>
-          <li class=" nav-item"><a href="#"><i class="feather icon-message-square"></i><span class="menu-title" data-i18n="Chat">Chat</span></a>
-          </li>
-          <li class=" nav-item"><a href="#"><i class="feather icon-check-square"></i><span class="menu-title" data-i18n="Todo">Todo</span></a>
-          </li>
-          <li class=" nav-item"><a href="app-calender.html"><i class="feather icon-calendar"></i><span class="menu-title" data-i18n="Calender">Calender</span></a>
-          </li>
-          <li class=" nav-item"><a href="#"><i class="feather icon-shopping-cart"></i><span class="menu-title" data-i18n="Ecommerce">Ecommerce</span></a>
-            <ul class="menu-content">
-              <li><a href="app-ecommerce-shop.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Shop</span></a>
-              </li>
-              <li><a href="app-ecommerce-details.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">Details</span></a>
-              </li>
-              <li><a href="app-ecommerce-wishlist.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Wish List">Wish List</span></a>
-              </li>
-              <li><a href="app-ecommerce-checkout.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Checkout">Checkout</span></a>
-              </li>
-            </ul>
-          </li>
-          <li class=" nav-item"><a href="#"><i class="feather icon-user"></i><span class="menu-title" data-i18n="User">User</span></a>
-            <ul class="menu-content">
-              <li><a href="app-user-list.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List">List</span></a>
-              </li>
-              <li><a href="app-user-view.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="View">View</span></a>
-              </li>
-              <li><a href="app-user-edit.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Edit">Edit</span></a>
-              </li>
-            </ul>
+          <li class=" nav-item"><a asp-page="Dashboard"><i class="feather icon-home"></i><span class="menu-title">Dashboard</span></a>
           </li>
         
+          <li class=" nav-item"><a href="#"><i class="feather icon-layers"></i><span class="menu-title">Services</span></a>
+            <ul class="menu-content">
+              <li><a asp-page="AnnualaReport"><i class="feather icon-circle"></i><span class="menu-item">Annual return</span></a>
+              </li>
+              <li><a asp-page="SCUMLApplication"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">SCUML Application</span></a>
+              </li>
+              <li><a asp-page="TaxDocumentation"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Wish List">Task documentation</span></a>
+              </li>
+             
+            </ul>
+          </li>
+       
+         <li class=" nav-item"><a asp-page="Accounting"><i class="feather icon-credit-card"></i><span class="menu-title">Accounting</span></a>
+          </li>
+          <li class=" nav-item"><a asp-page="History"><i class="feather icon-list"></i><span class="menu-title">History</span></a>
+          </li>
+          <li class=" nav-item"><a asp-page="Settings"><i class="feather icon-settings"></i><span class="menu-title">Settings</span></a>
+          </li>
+          <li class=" nav-item"><a asp-page="Users"><i class="feather icon-users"></i><span class="menu-title">Users</span></a>
+          </li>
+          <li class=" nav-item"><a asp-page="AuditTrails"><i class="feather icon-watch"></i><span class="menu-title">Audit Trail</span></a>
+          </li>
         </ul>
       </div>
     </div>
