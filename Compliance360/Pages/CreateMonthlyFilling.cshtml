@@ -1,7 +1,7 @@
 ﻿@page
-@model Compliance360.Pages.CreateSCUMLApplicationModel
+@model Compliance360.Pages.CreateMonthlyFillingModel
 @{
-     ViewData["Title"] = "SCUML Application";
+     ViewData["Title"] = "Monthly filling";
     Layout = "_DashboardLayout";
 }
 
@@ -14,28 +14,35 @@
                 <div class="card-content">
                     <div class="card-body">
 
-                        <p class="formheadings">Create new SCUML Application</p>
+                        <p class="formheadings">Monthly filling</p>
                         <p class="formsubheadings mb-3">Lorem ipsum dolor sit amet, consectetur adipor </p>
                         <form class="form">
                             <h6>Application details</h6>
                             <hr class="mb-3">
                             <div class="form-body">
                                 <div class="row">
-                                  
                                     <div class="col-md-6 col-12">
                                         <div class="form-label-group">
-                                            <p>Select service</p>
-                                          <select class="form-control">
-		                                    <option>Option one</option>
-		                                    <option>Option two</option>
-		                                    <option>Option three</option>
-		                                  </select>
+                                            <p>Date of last filing</p>
+                                            <input type="date" class="form-control" placeholder="22 Feb, 2022">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-label-group">
+                                            <p>Default year of filling</p>
+                                            <input type="text" class="form-control" placeholder="4" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-label-group">
+                                            <p>Tax exemption certificate </p>
+                                         <input type="file" class="form-control">
                                            
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12">
                                         <div class="form-label-group">
-                                            <p>Document upload</p>
+                                            <p>Financial statement for previous month</p>
                                             <input type="file" class="form-control">
                                         </div>
                                     </div>
@@ -49,7 +56,7 @@
                                     <div class="col-md-6 col-12">
                                         <div class="form-label-group">
                                             <p>Payment email</p>
-                                            <input type="email"  class="form-control" disabled placeholder="elijah@gmail.com">
+                                            <input type="email"  class="form-control" placeholder="elijah@gmail.com">
                                            
                                         </div>
                                     </div>
@@ -57,17 +64,19 @@
                                         <div class="col-lg-5 offset-lg-7 col-md-5 offset-md-7">
                                             <h6 class="mt-2">Payment summary</h6>
                                             <div class="paymentsummary p-2">
-                                                  <table class="table paymentsumtable">
+                                                <table class="table paymentsumtable">
                                                     <tr>
-                                                        <td>Actual cost</td>
-                                                        <td class="text-right font-weight-bold">5000</td>
+                                                        <td>Annual cost</td>
+                                                        <td class="text-right font-weight-bold">40,000</td>
                                                     </tr>
+
+                                                    
                                                     <tr>
                                                         <td>Default year</td>
                                                         <td class="text-right font-weight-bold">10,000</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Auditted finance</td>
+                                                        <td>Auditted financial</td>
                                                         <td class="text-right font-weight-bold">2,500</td>
                                                     </tr>
                                                     <tr>
@@ -76,7 +85,7 @@
                                                     </tr>
                                                     <tr>
                                                         <td>Legal fee</td>
-                                                        <td class="text-right font-weight-bold">15,000</td>
+                                                        <td class="text-right font-weight-bold">20,000</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Total</td>
