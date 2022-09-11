@@ -1,0 +1,163 @@
+﻿  <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav flex-row">
+          <li class="nav-item mr-auto"><a class="navbar-brand" href="#">
+              
+              <h2 class="brand-text mb-0">Compliance360</h2></a></li>
+          <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary" data-ticon="icon-disc"></i></a></li>
+        </ul>
+      </div>
+      <div class="shadow-bottom"></div>
+      <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+          <li class=" nav-item"><a href="#"><i class="feather icon-home"></i><span class="menu-title">Companies</span></a>
+            <ul class="menu-content">
+                <li><button class="btn btn-outline-primary w-100 mb-3"  data-toggle="modal" data-target="#large"> <i class="feather icon-plus"></i> Add company</button></li>
+              <li class="active"><a href="#"><i class="feather icon-briefcase"></i><span class="menu-item" >Company A</span></a>
+              </li>
+              <li><a href="#"><i class="feather icon-briefcase"></i><span class="menu-item">Company B</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class=" navigation-header"><span>Apps</span>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-mail"></i><span class="menu-title" data-i18n="Email">Email</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-message-square"></i><span class="menu-title" data-i18n="Chat">Chat</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-check-square"></i><span class="menu-title" data-i18n="Todo">Todo</span></a>
+          </li>
+          <li class=" nav-item"><a href="app-calender.html"><i class="feather icon-calendar"></i><span class="menu-title" data-i18n="Calender">Calender</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-shopping-cart"></i><span class="menu-title" data-i18n="Ecommerce">Ecommerce</span></a>
+            <ul class="menu-content">
+              <li><a href="app-ecommerce-shop.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Shop</span></a>
+              </li>
+              <li><a href="app-ecommerce-details.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">Details</span></a>
+              </li>
+              <li><a href="app-ecommerce-wishlist.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Wish List">Wish List</span></a>
+              </li>
+              <li><a href="app-ecommerce-checkout.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Checkout">Checkout</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="feather icon-user"></i><span class="menu-title" data-i18n="User">User</span></a>
+            <ul class="menu-content">
+              <li><a href="app-user-list.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List">List</span></a>
+              </li>
+              <li><a href="app-user-view.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="View">View</span></a>
+              </li>
+              <li><a href="app-user-edit.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Edit">Edit</span></a>
+              </li>
+            </ul>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+
+
+ 
+         <!-- Create company Modal -->
+    <div
+      class="modal fade"
+      id="createCompanyModal"
+      tabindex="-1"
+      aria-labelledby="createCompanyModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="createCompanyModalLabel">
+              Create company profile
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-5">
+              <div>
+                  <h6 class="companyheadingm">Create company</h6>
+                  <p class="companysubheadingm">Lorem ipsum dolor sit amet, consectetur adipor </p>
+              </div>
+              <form class="mt-3">
+                   <h6 class="fw-bold">Company profile</h6>
+                     <hr/>
+
+                    <div class="mb-3">
+                    <label for="companyaddress" class="form-label">Company address</label>
+                    <input type="text" class="form-control" id="companyaddress">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                             <div class="mb-3">
+                                <label for="companyaddress" class="form-label">Type of company</label>
+                                <input type="text" class="form-control" id="companyaddress">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="companyaddress" class="form-label">Incorporation date</label>
+                                <input type="date" class="form-control" id="companyaddress">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                             <div class="mb-3">
+                                <label for="companyaddress" class="form-label">Cac Id</label>
+                                <input type="text" class="form-control" id="companyaddress">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="companyaddress" class="form-label">Incorporation document</label>
+                                <input type="file" class="form-control" id="companyaddress">
+                            </div>
+                        </div>
+                         <div class="col-lg-6">
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Set yearly reminder for filling</label>
+                              </div>
+                        </div>
+                    </div>
+                    
+                     <h6 class="fw-bold">Contact person</h6>
+                    <hr/>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                             <div class="mb-3">
+                                <label for="companyaddress" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="companyaddress">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="companyaddress" class="form-label">Last name</label>
+                                <input type="date" class="form-control" id="companyaddress">
+                            </div>
+                        </div>
+                          <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="companyaddress" class="form-label">Phone number</label>
+                                <input type="date" class="form-control" id="companyaddress">
+                            </div>
+                        </div>
+                    </div>
+                     <div class="modal-footer">
+           
+                        <button type="button" class="btn btn-primary"><i data-feather="save"></i> Add company</button>
+                      </div>
+              </form>
+          </div>
+         
+        </div>
+      </div>
+    </div>
