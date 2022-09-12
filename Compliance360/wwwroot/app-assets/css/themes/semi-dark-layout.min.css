@@ -27,3 +27,35 @@ body.semi-dark-layout .main-menu-content .navigation-main .nav-item a,body.semi-
 .iconfont{
     font-size: 24px !important;
 }
+
+.tickettable td{
+    padding: 0.4rem !important;
+    vertical-align: middle;
+    font-size: 0.8rem !important;
+}
+
+.companytitle {
+    color: #1481E9 !important;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    line-height: 25px;
+    
+}
+.bluetext {
+    color: #1481E9 !important;
+}
+
+.uploadtext {
+    font-weight: 400 !!important;
+    font-size: 12px !important;
+    line-height: 15px !important;
+    /* identical to box height */
+
+
+    color: #000000 !important;
+}
+
+.jumbtron {
+    background: rgba(219, 16, 23, 0.12) !important;
+    border-radius: 4px !important;
+}

@@ -1,4 +1,83 @@
 ﻿@page
 @model Compliance360.Pages.DashboardModel
 @{
+     ViewData["Title"] = "Dashboard";
+    Layout = "_DashboardLayout";
 }
+<div class="jumbtron">
+    <div class="row">
+    <div class="col-lg-9">
+        <h5>Welcome back Company A!</h5>
+        <p> <span>You are currently have, </span> <span class="font-weight-bold">one </span> ongoing and  <span class="font-weight-bold">five </span> <span>completed SCUML Applications. Your annual return is in good shape, well done!</span></p>
+        </div>
+
+       
+    </div>
+      <div class="col-lg-3">
+      </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-4">
+        <a asp-page="NewTicketApplication">
+             <div class="card">
+          <div class="card-header d-flex pb-1">
+              <div class="avatar bg-rgba-primary p-50 m-0">
+                  <div class="avatar-content">
+                      <i class="feather icon-users text-primary font-medium-5"></i>
+                  </div>
+              </div>
+              <div>
+                   <h2 class="text-bold-700 mb-25">92.6k</h2>
+              <p class="mb-0">New ticket application</p>
+              </div>
+             
+          </div>
+          
+        </div>
+        </a>
+       
+    </div>
+
+    <div class="col-lg-4">
+        <a asp-page="InProgressTicketApplication">
+            <div class="card">
+          <div class="card-header d-flex justify-content-between  align-items-start pb-1">
+              <div class="avatar bg-rgba-primary p-50 m-0">
+                  <div class="avatar-content">
+                      <i class="feather icon-users text-primary font-medium-5"></i>
+                  </div>
+              </div>
+              <div>
+                  <h2 class="text-bold-700 mb-25">92.6k</h2>
+              <p class="mb-0">Application in progress</p>
+              </div>
+              
+          </div>
+          
+        </div>
+        </a>
+        
+    </div>
+
+    <div class="col-lg-4">
+        <a asp-page="CompletedTicketApplication">
+             <div class="card">
+          <div class="card-header d-flex justify-content-between align-items-start pb-1">
+              <div class="avatar bg-rgba-primary p-50 m-0">
+                  <div class="avatar-content">
+                      <i class="feather icon-users text-primary font-medium-5"></i>
+                  </div>
+              </div>
+              <div>
+                  <h2 class="text-bold-700 mb-25">92.6k</h2>
+                  <p class="mb-0">Completed application</p>
+              </div>
+              
+          </div>
+          
+        </div>
+        </a>
+       
+    </div>
+</div>
