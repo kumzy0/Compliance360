@@ -1,0 +1,151 @@
+﻿@page
+@model Compliance360.Pages.TaxDocumentationModel
+@{
+     ViewData["Title"] = "Tax Documentation";
+    Layout = "_DashboardLayout";
+}
+
+
+<div class="alert alert-danger" role="alert">
+  <span class="font-weight-bold">Note:  This service is only available to NGOs</span>
+</div>
+<!-- Column selectors with Export Options and print table -->
+<section id="column-selectors">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title"> </h4>
+                    <button class="btn btn-primary ms-auto text-white" data-toggle="modal" data-target="#createTax"> <i class="feather icon-plus"></i>  New Tax Documentation</button>
+                </div>
+                <div class="card-content">
+                    <div class="card-body card-dashboard">
+                     
+                        <div class="table-responsive">
+                            <table class="table table-striped dataex-html5-selectors">
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>Application date</th>
+                                        <th>Application status</th>
+                                        <th>Default year</th>
+                                        <th>Service</th>
+                                        <th>Amount</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>22 Feb, 2022</td>
+                                        <td><span class="badge bg-warning">Pending</span></td>
+                                        <td>61</td>
+                                       
+                                        <td>Tax Exemption Certificate</td>
+                                        <td>N320,800</td>
+                                        <td>
+                                            <span class="iconfont"><i class="feather icon-eye"></i> </span> 
+                                            <span class="iconfont"><i class="feather icon-edit"></i> </span>
+                                        </td>
+                                    </tr>
+                                   <tr>
+                                        <td>2</td>
+                                        <td>22 Feb, 2022</td>
+                                        <td><span class="badge bg-primary">Completed</span></td>
+                                        <td>61</td>
+                                       
+                                        <td>Monthly filling</td>
+                                        <td>N320,800</td>
+                                        <td>
+                                            <span class="iconfont"><i class="feather icon-eye"></i> </span> 
+                                            <span class="iconfont"><i class="feather icon-edit"></i> </span>
+                                        </td>
+                                    </tr>
+                                     <tr>
+                                        <td>3</td>
+                                        <td>22 Feb, 2022</td>
+                                        <td><span class="badge bg-primary">Completed</span></td>
+                                        <td>61</td>
+                                       
+                                        <td>Tax Exemption Certificate</td>
+                                        <td>N320,800</td>
+                                        <td>
+                                            <span class="iconfont"><i class="feather icon-eye"></i> </span> 
+                                            <span class="iconfont"><i class="feather icon-edit"></i> </span>
+                                        </td>
+                                    </tr>
+                                     <tr>
+                                        <td>4</td>
+                                        <td>22 Feb, 2022</td>
+                                        <td><span class="badge bg-warning">Pending</span></td>
+                                        <td>61</td>
+                                       
+                                        <td>Monthly filling</td>
+                                        <td>N320,800</td>
+                                        <td>
+                                            <span class="iconfont"><i class="feather icon-eye"></i> </span> 
+                                            <span class="iconfont"><i class="feather icon-edit"></i> </span>
+                                        </td>
+                                    </tr>
+                                     <tr>
+                                        <td>5</td>
+                                        <td>22 Feb, 2022</td>
+                                        <td><span class="badge bg-warning">Pending</span></td>
+                                        <td>61</td>
+                                       
+                                        <td>Tax Exemption Certificate</td>
+                                        <td>N320,800</td>
+                                        <td>
+                                            <span class="iconfont"><i class="feather icon-eye"></i> </span> 
+                                            <span class="iconfont"><i class="feather icon-edit"></i> </span>
+                                        </td>
+                                    </tr>
+                                     <tr>
+                                        <td>6</td>
+                                        <td>22 Feb, 2022</td>
+                                        <td><span class="badge bg-primary">Completed</span></td>
+
+                                        <td>61</td>
+                                       
+                                        <td>Monthly filling</td>
+                                        <td>N320,800</td>
+                                        <td>
+                                            <span class="iconfont"><i class="feather icon-eye"></i> </span> 
+                                            <span class="iconfont"><i class="feather icon-edit"></i> </span>
+                                        </td>
+                                    </tr>
+                                   
+                                </tbody>
+                              
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Column selectors with Export Options and print table -->
+
+      <!-- Modal -->
+                  <div class="modal fade text-left" id="createTax" tabindex="-1" role="dialog"
+                    aria-labelledby="myModalLabel17" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title" id="myModalLabel17">Create Tax documentation</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body p-2">
+                             <p>What tax documentation process will you like to file for?</p>
+                             <div class="d-flex justify-content-between">
+                                 <a asp-page="TaxExemptionCertificate" class="btn btn-primary"> <i class="feather icon-file-text"></i> &nbsp; Tax Exemption Certificate</a>
+                                 <a asp-page="MonthlyFilling" class="btn btn-outline-primary"> <i class="feather icon-tag"></i> &nbsp; Monthly Filling</a>
+                             </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
