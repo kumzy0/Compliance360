@@ -58,4 +58,15 @@ body.semi-dark-layout .main-menu-content .navigation-main .nav-item a,body.semi-
 .jumbtron {
     background: rgba(219, 16, 23, 0.12) !important;
     border-radius: 4px !important;
+    margin-top: 130px !important;
+    margin-bottom: 50px;
+}
+
+.signinimage {
+    margin-top: -150px !important;
+}
+
+.cardimg {
+    float: left;
+    margin-right: 20px !important;
 }

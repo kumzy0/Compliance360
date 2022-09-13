@@ -332,10 +332,8 @@
 }
 
 .logfooter {
-  position: absolute;
   bottom: 0;
   text-align: center;
-  width: 50%;
 }
 
 .otpform {
@@ -429,3 +427,4 @@ company dashboard
 
     color: #928989 !important;
 }
+
