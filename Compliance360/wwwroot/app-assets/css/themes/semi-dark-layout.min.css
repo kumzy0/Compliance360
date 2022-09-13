@@ -70,3 +70,17 @@ body.semi-dark-layout .main-menu-content .navigation-main .nav-item a,body.semi-
     float: left;
     margin-right: 20px !important;
 }
+
+@media screen and (max-width: 768px) {
+    .signinimage {
+        display: none;
+    }
+    .jumbtron {
+        margin-top: 10px !important;
+        margin-bottom: 50px;
+    }
+
+    .marphone{
+        margin-top: 20px;
+    }
+}
