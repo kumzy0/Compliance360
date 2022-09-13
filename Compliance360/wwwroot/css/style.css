@@ -304,6 +304,9 @@
 
     .logimgbox {
         box-shadow: 4px 0px 26px 2px rgba(0, 0, 0, 0.25);
+        height: 100vh;
+        display: flex;
+        flex-direction:column;
     }
 
     .lgbox {
